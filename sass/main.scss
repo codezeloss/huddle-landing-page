@@ -41,18 +41,23 @@ body {
   }
 
   &__button {
+    color: hsl(192, 100%, 9%);
     font-size: 0.9rem;
     background-color: #fff;
     padding: 0.7rem 4rem;
     border-radius: 2rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: lightgray 0px 2px 8px 0px;
   }
 
   &__button:link,
   &__button:visited {
     cursor: pointer;
     text-decoration: none;
-    color: #000;
+  }
+
+  &__button:hover,
+  &__button:active {
+    color: hsla(192, 100%, 9%, 0.509);
   }
 }
 
@@ -70,20 +75,22 @@ body {
   &__content {
     margin-right: 2rem;
     max-width: 50%;
+    margin-right: 4rem;
   }
 
   &__heading {
+    color: hsl(192, 100%, 9%);
     font-size: 2.6rem;
     font-weight: bold;
     margin-bottom: 1.8rem;
   }
 
   &__paragraph {
+    color: hsl(192, 100%, 9%);
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1.8rem;
-    margin-right: 2rem;
   }
 
   &__image {
@@ -97,7 +104,7 @@ body {
     background-color: hsl(322, 100%, 66%);
     padding: 1rem 4rem;
     border-radius: 2rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: lightgray 0px 2px 8px 0px;
   }
 
   &__button:link,
@@ -105,6 +112,11 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
+  }
+
+  &__button:hover,
+  &__button:active {
+    background-color: rgba(255, 82, 192, 0.769);
   }
 }
 
@@ -117,7 +129,7 @@ body {
 }
 
 .cards {
-  padding: 8rem 8rem 26rem 8rem;
+  padding: 10rem 8rem 26rem 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,13 +152,15 @@ body {
   }
 
   &__heading {
+    color: hsl(192, 100%, 9%);
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 
   &__paragraph {
+    color: hsla(192, 100%, 9%, 0.55);
     font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1.8rem;
   }
@@ -161,6 +175,9 @@ body {
   }
 }
 
+/////////////////////////////////////////////////////
+///////////// CALL TO ACTION SECTION ////////////////
+/////////////////////////////////////////////////////
 .cta {
   background-color: #fff;
   border-radius: 0.8rem;
@@ -178,6 +195,7 @@ body {
   justify-content: center;
 
   &__heading {
+    color: hsl(192, 100%, 9%);
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.8rem;
@@ -189,7 +207,7 @@ body {
     background-color: hsl(322, 100%, 66%);
     padding: 1.2rem 6rem;
     border-radius: 2rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: lightgray 0px 2px 8px 0px;
   }
 
   &__button:link,
@@ -197,6 +215,11 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
+  }
+
+  &__button:hover,
+  &__button:active {
+    background-color: rgba(255, 82, 192, 0.769);
   }
 }
 
@@ -206,10 +229,10 @@ body {
 .grid {
   max-width: 1100px;
   display: grid;
-  grid-template-columns: 2fr 100px 100px 1fr;
+  grid-template-columns: 3fr 100px 100px 1fr;
   grid-template-rows: 20% 80%;
   row-gap: 2rem;
-  column-gap: 8rem;
+  column-gap: 8.2rem;
 }
 
 .flex-container {
@@ -254,6 +277,11 @@ body {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
   }
 
   &__icon {
@@ -302,6 +330,9 @@ body {
     // background-color: lightcyan;
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
 
     img {
       width: 1.8rem;
