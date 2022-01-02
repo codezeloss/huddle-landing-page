@@ -1,9 +1,322 @@
-body {
-  background-color: greenyellow;
+/*
+  SPACE SIZE SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 /
+  80 / 96 / 128
+
+  FONT SIZE SYSTEM (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 /
+  36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-p {
-  color: white;
-  font-size: 4rem;
-  font-weight: bold;
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(193, 100%, 96%);
+  z-index: -1;
+}
+
+.container {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+
+/////////////////////////////////////////////////////
+////////////////// NAVBAR SECTION ///////////////////
+/////////////////////////////////////////////////////
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.8rem 8rem 2rem 8rem;
+
+  &__logo {
+    width: 20em;
+  }
+
+  &__button {
+    font-size: 0.9rem;
+    background-color: #fff;
+    padding: 0.7rem 4rem;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  &__button:link,
+  &__button:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+/////////////////////////////////////////////////////
+////////////////// HERO SECTION ///////////////////
+/////////////////////////////////////////////////////
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8rem 4rem 8rem;
+  position: relative;
+
+  &__content {
+    margin-right: 2rem;
+    max-width: 50%;
+  }
+
+  &__heading {
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin-bottom: 1.8rem;
+  }
+
+  &__paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+    margin-right: 2rem;
+  }
+
+  &__image {
+    max-width: 50%;
+    height: auto;
+  }
+
+  &__button {
+    display: inline-block;
+    font-size: 0.95rem;
+    background-color: hsl(322, 100%, 66%);
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  &__button:link,
+  &__button:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+/////////////////////////////////////////////////////
+////////////////// CARDS SECTION ///////////////////
+/////////////////////////////////////////////////////
+.cards-section {
+  background-color: #fff;
+  margin-bottom: -16rem;
+}
+
+.cards {
+  padding: 8rem 8rem 26rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.6rem;
+}
+
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0.8rem;
+  align-items: center;
+  padding: 4rem 4rem 4rem 6rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  &__content {
+    width: 60%;
+    margin-right: 8rem;
+  }
+
+  &__heading {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+
+  &__image {
+    width: 50%;
+  }
+
+  &__box-2 {
+    margin-left: 8rem;
+    margin-right: 0rem;
+  }
+}
+
+.cta {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 50rem;
+  margin: 0 auto;
+  padding: 4rem 8rem;
+  // margin-bottom: -9rem;
+  z-index: 4;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.8rem;
+  }
+
+  &__button {
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: hsl(322, 100%, 66%);
+    padding: 1.2rem 6rem;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  &__button:link,
+  &__button:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+/////////////////////////////////////////////////////
+////////////////// FOOTER SECTION ///////////////////
+/////////////////////////////////////////////////////
+.grid {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 2fr 100px 100px 1fr;
+  grid-template-rows: 20% 80%;
+  row-gap: 2rem;
+  column-gap: 8rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.8rem;
+}
+
+.flex-container:not(:first-child) {
+  align-items: center;
+}
+
+.flex-container:first-child {
+  p {
+    margin-left: 0.4rem;
+  }
+
+  img {
+    margin-top: 0.4rem;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
+  background-color: hsl(192, 100%, 9%);
+  padding: 16rem 8rem 3.6rem 8rem;
+  z-index: -1;
+
+  margin-top: -6.2rem;
+
+  a:link,
+  a:visited {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1.4rem;
+  }
+
+  &__logo-box {
+    // background-color: blueviolet;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  &__contact-box {
+    // background-color: red;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    p {
+      line-height: 1.6;
+    }
+  }
+
+  &__about-box {
+    // background-color: green;
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
+
+    p {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__about-box2 {
+    // background-color: yellow;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    p {
+      margin-bottom: 1.8rem;
+    }
+  }
+
+  &__about-box3 {
+    // background-color: lightcyan;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+.copyright {
+  font-size: 0.8rem;
+  font-weight: normal;
+  max-width: 1100px;
+  display: flex;
+  justify-content: right;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
