@@ -151,6 +151,9 @@ body {
     padding: 1rem 4rem;
     border-radius: 2rem;
     box-shadow: lightgray 0px 2px 8px 0px; }
+    @media only screen and (max-width: 445px) {
+      .hero__button {
+        font-size: 0.8rem; } }
   .hero__button:link, .hero__button:visited {
     cursor: pointer;
     text-decoration: none;
