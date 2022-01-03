@@ -36,8 +36,32 @@ body {
   align-items: center;
   padding: 2.8rem 8rem 2rem 8rem;
 
+  @media only screen and (max-width: 1090px) {
+    padding: 2.8rem 6rem 2rem 6rem;
+  }
+
+  @media only screen and (max-width: 930px) {
+    padding: 2.8rem 3.6rem 2rem 3.6rem;
+  }
+
+  @media only screen and (max-width: 545px) {
+    padding: 2.8rem 2.4rem 2rem 2.4rem;
+  }
+
+  @media only screen and (max-width: 445px) {
+    padding: 2.8rem 2rem 2rem 2rem;
+  }
+
   &__logo {
-    width: 20em;
+    width: 12rem;
+
+    @media only screen and (max-width: 1090px) {
+      width: 10.5rem;
+    }
+
+    @media only screen and (max-width: 699px) {
+      width: 8rem;
+    }
   }
 
   &__button {
@@ -47,6 +71,10 @@ body {
     padding: 0.7rem 4rem;
     border-radius: 2rem;
     box-shadow: lightgray 0px 2px 8px 0px;
+
+    @media only screen and (max-width: 1090px) {
+      padding: 0.4rem 2.2rem;
+    }
   }
 
   &__button:link,
@@ -72,10 +100,35 @@ body {
   padding: 4rem 8rem 4rem 8rem;
   position: relative;
 
+  @media only screen and (max-width: 1090px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 699px) {
+    padding: 4rem 5rem 4rem 5rem;
+  }
+
+  @media only screen and (max-width: 545px) {
+    padding: 4rem 2.4rem 4rem 2.4rem;
+  }
+
+  @media only screen and (max-width: 445px) {
+    padding: 4rem 2rem 4rem 2rem;
+  }
+
   &__content {
-    margin-right: 2rem;
     max-width: 50%;
     margin-right: 4rem;
+
+    @media only screen and (max-width: 1090px) {
+      max-width: 90%;
+      margin-right: 0rem;
+    }
+
+    @media only screen and (max-width: 930px) {
+      max-width: 100%;
+    }
   }
 
   &__heading {
@@ -83,6 +136,10 @@ body {
     font-size: 2.6rem;
     font-weight: bold;
     margin-bottom: 1.8rem;
+
+    @media only screen and (max-width: 699px) {
+      font-size: 2rem;
+    }
   }
 
   &__paragraph {
@@ -90,12 +147,29 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.4rem;
+
+    @media only screen and (max-width: 1090px) {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and (max-width: 699px) {
+      font-size: 1rem;
+    }
   }
 
   &__image {
     max-width: 50%;
     height: auto;
+
+    @media only screen and (max-width: 1090px) {
+      max-width: 90%;
+      margin-top: 4.6rem;
+    }
+
+    @media only screen and (max-width: 930px) {
+      max-width: 100%;
+    }
   }
 
   &__button {
@@ -126,6 +200,10 @@ body {
 .cards-section {
   background-color: #fff;
   margin-bottom: -16rem;
+
+  @media only screen and (max-width: 699px) {
+    margin-bottom: -18rem;
+  }
 }
 
 .cards {
@@ -134,6 +212,18 @@ body {
   flex-direction: column;
   justify-content: center;
   row-gap: 2.6rem;
+
+  @media only screen and (max-width: 1090px) {
+    padding: 8rem 6rem 26rem 6rem;
+  }
+
+  @media only screen and (max-width: 930px) {
+    padding: 7rem 3.6rem 26rem 3.6rem;
+  }
+
+  @media only screen and (max-width: 545px) {
+    padding: 5rem 2.4rem 26rem 2.4rem;
+  }
 }
 
 .card {
@@ -143,18 +233,37 @@ body {
   justify-content: center;
   border-radius: 0.8rem;
   align-items: center;
-  padding: 4rem 4rem 4rem 6rem;
+  padding: 5rem 4rem 5rem 6rem;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+  @media only screen and (max-width: 775px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.8rem 4rem 2.8rem 4rem;
+  }
+
+  @media only screen and (max-width: 545px) {
+    padding: 2.8rem 2.6rem 2.8rem 2.6rem;
+  }
+
   &__content {
-    width: 60%;
+    width: 70%;
     margin-right: 8rem;
+
+    @media only screen and (max-width: 775px) {
+      width: 100%;
+      margin-right: 0rem;
+    }
   }
 
   &__heading {
     color: hsl(192, 100%, 9%);
     font-size: 1.6rem;
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: 699px) {
+      font-size: 1.4rem;
+    }
   }
 
   &__paragraph {
@@ -163,15 +272,42 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1.8rem;
+
+    @media only screen and (max-width: 699px) {
+      font-size: 1rem;
+    }
   }
 
   &__image {
     width: 50%;
+
+    @media only screen and (max-width: 775px) {
+      width: 85%;
+      order: 1;
+      margin-bottom: 4.2rem;
+    }
+  }
+
+  &__box-1 {
+    @media only screen and (max-width: 775px) {
+      order: 2;
+    }
   }
 
   &__box-2 {
     margin-left: 8rem;
     margin-right: 0rem;
+
+    @media only screen and (max-width: 775px) {
+      margin: 0 auto;
+      order: 2;
+    }
+  }
+
+  &__box-3 {
+    @media only screen and (max-width: 775px) {
+      order: 2;
+    }
   }
 }
 
@@ -194,11 +330,51 @@ body {
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 1090px) {
+    width: 45rem;
+    padding: 3.2rem 2rem;
+  }
+
+  @media only screen and (max-width: 930px) {
+    width: 40rem;
+  }
+
+  @media only screen and (max-width: 775px) {
+    width: 35rem;
+    padding: 3rem 4rem;
+  }
+
+  @media only screen and (max-width: 699px) {
+    width: 32rem;
+    padding: 3rem 2rem;
+  }
+
+  @media only screen and (max-width: 545px) {
+    width: 90%;
+    margin: 0.6rem auto;
+  }
+
+  @media only screen and (max-width: 512px) {
+    padding: 2rem 1rem;
+  }
+
   &__heading {
     color: hsl(192, 100%, 9%);
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.8rem;
+
+    @media only screen and (max-width: 775px) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: 699px) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: 512px) {
+      font-size: 1.3rem;
+    }
   }
 
   &__button {
@@ -208,6 +384,15 @@ body {
     padding: 1.2rem 6rem;
     border-radius: 2rem;
     box-shadow: lightgray 0px 2px 8px 0px;
+
+    @media only screen and (max-width: 775px) {
+      font-size: 1.1rem;
+      padding: 1rem 4rem;
+    }
+
+    @media only screen and (max-width: 699px) {
+      font-size: 1rem;
+    }
   }
 
   &__button:link,
@@ -226,40 +411,6 @@ body {
 /////////////////////////////////////////////////////
 ////////////////// FOOTER SECTION ///////////////////
 /////////////////////////////////////////////////////
-.grid {
-  max-width: 1100px;
-  display: grid;
-  grid-template-columns: 3fr 100px 100px 1fr;
-  grid-template-rows: 20% 80%;
-  row-gap: 2rem;
-  column-gap: 8.2rem;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1.8rem;
-}
-
-.flex-container:not(:first-child) {
-  align-items: center;
-}
-
-.flex-container:first-child {
-  p {
-    margin-left: 0.4rem;
-  }
-
-  img {
-    margin-top: 0.4rem;
-  }
-}
-
-.center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .footer {
   font-family: "Open Sans", sans-serif;
@@ -271,6 +422,24 @@ body {
   z-index: -1;
 
   margin-top: -6.2rem;
+
+  @media only screen and (max-width: 930px) {
+    padding: 14rem 8rem 3.6rem 8rem;
+  }
+
+  @media only screen and (max-width: 699px) {
+    font-size: 0.9rem;
+  }
+
+  @media only screen and (max-width: 545px) {
+    padding: 13rem 4rem 3.6rem 4rem;
+    font-size: 0.9rem;
+  }
+
+  @media only screen and (max-width: 445px) {
+    font-size: 1.1rem;
+    padding: 12rem 3.6rem 3.6rem 3.6rem;
+  }
 
   a:link,
   a:visited {
@@ -334,20 +503,81 @@ body {
     display: flex;
     flex-direction: column;
 
+    @media only screen and (max-width: 775px) {
+      flex-direction: row;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
     img {
       width: 1.8rem;
       height: 1.8rem;
-      margin-right: 0.2rem;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &__copyright {
+    font-size: 0.7rem;
+    font-weight: normal;
+    max-width: 1100px;
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+    margin-top: 4rem;
+
+    @media only screen and (max-width: 699px) {
+      font-size: 0.6rem;
+    }
+
+    @media only screen and (max-width: 445px) {
+      font-size: 0.8rem;
     }
   }
 }
 
-.copyright {
-  font-size: 0.8rem;
-  font-weight: normal;
+/////////////////////////////////////////////////////
+/////////////////////// GENERAL /////////////////////
+/////////////////////////////////////////////////////
+.grid {
   max-width: 1100px;
+  display: grid;
+  grid-template-columns: 3fr 100px 100px 1fr;
+  grid-template-rows: 20% 80%;
+  row-gap: 2rem;
+  column-gap: 4.4rem;
+
+  @media only screen and (max-width: 775px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 699px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.flex-container {
   display: flex;
-  justify-content: right;
-  margin: 0 auto;
-  margin-top: 4rem;
+  flex-direction: row;
+  margin-bottom: 1.8rem;
+}
+
+.flex-container:not(:first-child) {
+  align-items: center;
+}
+
+.flex-container:first-child {
+  p {
+    margin-left: 0.4rem;
+  }
+
+  img {
+    margin-top: 0.4rem;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
