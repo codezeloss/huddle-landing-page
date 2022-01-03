@@ -313,11 +313,9 @@ body {
       font-size: 0.9rem; } }
   @media only screen and (max-width: 545px) {
     .footer {
-      padding: 13rem 4rem 3.6rem 4rem;
-      font-size: 0.9rem; } }
+      padding: 13rem 4rem 3.6rem 4rem; } }
   @media only screen and (max-width: 445px) {
     .footer {
-      font-size: 1.1rem;
       padding: 12rem 3.6rem 3.6rem 3.6rem; } }
   .footer a:link,
   .footer a:visited {
