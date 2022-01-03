@@ -367,6 +367,8 @@ body {
     width: min-content;
     padding: 1rem;
     border-radius: 0.6rem; }
+  .footer__logo {
+    max-width: 8rem; }
   .footer__contact-box {
     grid-column: 1 / 2;
     grid-row: 2 / 3; }

@@ -512,6 +512,10 @@ body {
     border-radius: 0.6rem;
   }
 
+  &__logo {
+    max-width: 8rem;
+  }
+
   &__contact-box {
     // background-color: red;
     grid-column: 1 / 2;
