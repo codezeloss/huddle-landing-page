@@ -337,7 +337,7 @@ body {
   @media only screen and (max-width: 930px) {
     .footer {
       padding: 14rem 8rem 3.6rem 8rem; } }
-  @media only screen and (max-width: 699px) {
+  @media only screen and (max-width: 745px) {
     .footer {
       font-size: 0.9rem; } }
   @media only screen and (max-width: 545px) {
@@ -357,10 +357,16 @@ body {
   .footer__icon {
     width: 1rem;
     height: 1rem;
-    margin-right: 1.4rem; }
+    margin-right: 1.4rem;
+    color: #fff;
+    fill: #fff; }
   .footer__logo-box {
     grid-column: 1 / -1;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    background-color: #fff;
+    width: min-content;
+    padding: 1rem;
+    border-radius: 0.6rem; }
   .footer__contact-box {
     grid-column: 1 / 2;
     grid-row: 2 / 3; }
@@ -381,6 +387,11 @@ body {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 890px) {
+      .footer__about-box3 {
+        flex-direction: row;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; } }
     @media only screen and (max-width: 775px) {
       .footer__about-box3 {
         flex-direction: row;
