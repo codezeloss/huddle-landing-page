@@ -162,6 +162,10 @@ body {
     @media only screen and (max-width: 699px) {
       font-size: 2rem;
     }
+
+    @media only screen and (max-width: 445px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__paragraph {
